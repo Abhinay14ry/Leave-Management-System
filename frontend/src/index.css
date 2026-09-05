@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	font-family: 'DM Sans', sans-serif;
+	color: #17212b;
+	background: #f5f7f4;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; background: #f5f7f4; }
+h1, h2, h3, h4 { font-family: 'Space Grotesk', sans-serif; letter-spacing: 0; }
+button, input, select, textarea { font: inherit; }
+button { transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease; }
+button:not(:disabled):hover { transform: translateY(-1px); }
+
+input, select, textarea {
+	border-color: #d7ded8 !important;
+	background: #fbfcfa;
+	color: #17212b;
+	border-radius: 10px !important;
+	transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+input:focus, select:focus, textarea:focus {
+	border-color: #3c7a68 !important;
+	box-shadow: 0 0 0 3px rgba(60, 122, 104, 0.14) !important;
+}
+
+.bg-gray-50 { background-color: #f5f7f4 !important; }
+.text-blue-600, .text-blue-700 { color: #276653 !important; }
+.bg-blue-600 { background-color: #276653 !important; }
+.hover\:bg-blue-700:hover { background-color: #1e5142 !important; }
+.bg-blue-100 { background-color: #e3f0e9 !important; }
+.text-gray-900 { color: #17212b !important; }
+.text-gray-700 { color: #40504a !important; }
+.text-gray-600, .text-gray-500 { color: #718078 !important; }
+.shadow, .shadow-lg, .shadow-sm { box-shadow: 0 12px 35px rgba(34, 55, 45, 0.07) !important; }
